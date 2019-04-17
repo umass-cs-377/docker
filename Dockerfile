@@ -5,4 +5,5 @@ RUN apt-get install -y qemu tmux
 RUN apt-get install -y gdb
 RUN cd /usr/src/gtest && cmake CMakeLists.txt && make && cp *.a /usr/lib
 RUN pip install PyYAML
+RUN apt-get install -y valgrind
 CMD bash
